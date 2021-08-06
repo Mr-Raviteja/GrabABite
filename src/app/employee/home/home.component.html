@@ -22,7 +22,7 @@
            <td>{{group.city}}</td>
            <td>{{group.country}}</td>
            <td><a (click)="deleteUser(group.empId)" class="text-danger">Delete</a></td>
-           <td><a [routerLink]="['/update']">Update</a></td>
+           <td><a [routerLink]="['/update',group.empId]">Update</a></td>
        </tr>
     </tbody>
   </table>

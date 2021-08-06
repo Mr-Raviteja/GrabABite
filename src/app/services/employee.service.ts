@@ -13,7 +13,7 @@ private api = "http://localhost:9595/api";
     }
     
     getEmployeeById(empid:number){
-        return this.http.get(this.api+'/employee/'+ empid);
+        return this.http.get(this.api+'/employees/'+ empid);
     }
     registerEmployee(employee:Employee){
         return this.http.post(this.api+'/employees',employee);

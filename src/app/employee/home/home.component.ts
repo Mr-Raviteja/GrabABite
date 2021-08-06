@@ -1,9 +1,9 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 import { Employee } from 'src/app/models/employee';
 import { EmployeeService } from 'src/app/services/employee.service';
 import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
   data : any
   user !: Employee
   constructor(private employeeService:EmployeeService) {
-
   }
   title = 'angulardatatables';
   dtOptions: any={};
